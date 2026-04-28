@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Community - Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌐 Tech Community</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">📝 Daftar Anggota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">🎨 Multimedia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <div class="row text-center mb-5">
+            <div class="col-12">
+                <h1 class="display-4 fw-bold text-primary mb-4">🎨 Gallery Multimedia</h1>
+                <p class="lead text-muted">Nikmati konten multimedia menarik dari Tech Community</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Gambar -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg h-100">
+                    <img src="https://assetd.kompas.id/0K6GDYmg434r5WXVfMZvTucoHcI=/1024x683/smart/filters:format(webp):quality(80)/https://asset.kgnewsroom.com/photo/pre/2024/01/27/72f94da0-cd28-4c46-ae03-53391c2a222a_jpg.jpg" class="card-img-top" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">📸 Band Green Day</h5>
+                        <p class="card-text">Green Day adalah band punk rock ikonik asal Amerika Serikat yang dibentuk pada tahun 1987 di California, beranggotakan trio Billie Joe Armstrong (vokal/gitar), Mike Dirnt (bass), dan Tré Cool (drum)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video YouTube -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg h-100">
+                    <div class="card-body p-0">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="Ariana Grande - bye [Altare Remix].mp4" title="Tech Video" allowfullscreen class="rounded-top"></iframe>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">🎥 Video Cinematic</h5>
+                        <p class="card-text">Video Cinematic Menggunakan Lagu "Bye" dari Ariana Grande (dari album Eternal Sunshine, 2024) bergenre utama Dance-pop dan Disco-funk</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg h-100">
+                    <div class="card-body text-center p-4">
+                        <audio id="techAudio" class="w-100 mb-3" controls>
+                            <source src="Bruno Mars - When I Was Your Man - LatinHype.mp3" type="audio/mpeg">
+                            Browser Anda tidak mendukung audio.
+                        </audio>
+                        <h5 class="card-title">🎵 Bruno Mars - When I Was Your Man</h5>
+                        <p class="card-text">Lagu ini mendeskripsikan perasaan seseorang yang menyadari keegoisannya menyebabkan dia kehilangan kekasih yang dicintainya, dan berharap pasangannya yang baru memberikan perhatian yang dulu gagal ia berikan
+                        <div class="btn-group w-100" role="group">
+                            <button class="btn btn-success" onclick="playAudio()">▶️ Play</button>
+                            <button class="btn btn-danger" onclick="pauseAudio()">⏸️ Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
