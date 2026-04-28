@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #f4f4f4 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem !important;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,123,255,.075);
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.display-4 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.fixed-top {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
